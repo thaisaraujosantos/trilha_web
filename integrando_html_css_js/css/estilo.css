@@ -30,3 +30,33 @@ body {
     border: 8px solid #F6CC42;
     font-weight: 900;
 }
+
+#exercicio .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    font-size: 1.7rem;
+    color: white;
+    background-color: #444;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus, select:focus {
+    background-color: #555;
+}
+
+button {
+    font-size: 1.4rem;
+    color: white;
+    background-color: #319DA0;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
