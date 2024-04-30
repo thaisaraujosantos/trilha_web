@@ -40,17 +40,20 @@
         items.forEach((item, indice) => {
             item.draggable = true
             item.id = item.id || `draggable-item-${indice}`
-            item.ondragstart = function(evento) {
+            item.ondragstart = function (evento) {
                 evento.dataTransfer.setData('itemId', evento.target.id)
-                console.log(evento.target.id)
             }
         })
 
         const dropzones = document.querySelectorAll('[web-dropzone]')
         dropzones.forEach(dropzone => {
             dropzone.ondragover = e => e.preventDefault()
-            dropzone.ondrop = function(evento) {
-                console.log('drop...')
+
+            dropzone.ondrop = function (evento) {
+               const itemId = evento.dataTransfer.getData('itemId')
+               const item = document.getElementById(itemId)
+            //    evento.target.appendChild(item)
+                dropzone.appendChild(item)
             }
         })
       
