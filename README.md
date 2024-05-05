@@ -32,7 +32,7 @@ How to Contribute:
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 Author:
-This project was developed by [Your Name]. You can find more information about the author on [their LinkedIn profile, GitHub, etc.].
+This project was developed by Thais Araujo Santos. You can find more information about the author on www.linkedin.com/in/thaisaraujosantos
 
 License:
 This project is licensed under the MIT License. See the LICENSE file for more information.
